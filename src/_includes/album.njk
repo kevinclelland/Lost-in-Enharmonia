@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/album.css">
 
     <title>{{ title }}</title>
 </head>
@@ -15,12 +15,27 @@
   <a href="/"><img src="/assets/img/logo-whitenew2.png" alt="Welcome Listen"></a>
 </div>
 
+<div class="container">
+    <h1>{{ title }}</h1>
+    
+  </div>
+
+  <div class="container">
+
+   <h2>Is the album ready to go on your music player?</h2><br>
+   <h2>If so then click on the first song...</h2><br>
+           
+  </div>
 
     {{ content | safe }}
 
+<p><a href="/instructions"><button class="button2">Back</button></a></p>
 
 <div class="footer">
-  <h2>Best viewed in Netscape Navigator v1.7 and above. Copyright KC Digital 1999.</h2>
+  <h2>Best viewed in Netscape Navigator v1.7 and above. Copyright 1999.</h2>
 </div>
+
+<script src="/js/modal.js"></script>
+
 </body>
 </html>

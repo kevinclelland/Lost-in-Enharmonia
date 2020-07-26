@@ -164,21 +164,19 @@ body {
 
       #instructions {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.5em;
-        align-content: center; 
-        width: 85%;
-        text-align: justify;
+
       }
 
       img {
-        width: 80%;
+        width: 60%;
         height: auto;
       }
 
       #logo-container img {
-        width: 90%;
+        width: 60%;
         height: auto;
      }
+
      
       .leftcolumn {   
         float: left;
@@ -190,6 +188,7 @@ body {
         width: 30%;
         background-color: black;
         padding-left: 20px;
+        text-align: justify;
       }
 
   
@@ -200,11 +199,147 @@ body {
     clear: both;
   }
       
-  .grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    grid-gap: 8px;
-    background-color: #68a9f596;
-    padding: 8px;
+     /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #7ea3aa;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
   }
-     
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #00aab6;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #00aab6;
+  color: white;
+}
+
+/* CSS to striketrhough each song */
+/* Remove margins and padding from the list */
+#songName {
+  margin: 0;
+  padding: 0;
+}
+/* Style the list items */
+#songName {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(182, 182, 182);
+  font-size: 1em;
+  transition: 0.2s;
+  
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+#songName:nth-child(odd) {
+  background: #a0a0a0;
+}
+/* Darker background-color on hover */
+#songName:hover {
+  background: rgb(87, 119, 80);
+}
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #255e16;
+  text-decoration: line-through;
+}
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #030303;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 14px 10px 14px;
+}
+.close:hover {
+  background-color: #06b900;
+  color: white;
+}
+
+#myUL {
+  width: auto;
+  border: 10px solid #828180;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}

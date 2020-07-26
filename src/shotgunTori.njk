@@ -1,43 +1,93 @@
 ---
-title: Welcome. Listen.
-layout: base.njk
+title: Shotgun Tori
+layout: album.njk
 ---
-
-
-
-<div class="container">
-
-    <h1>Shotgun Tori</h1><br>
-    <h2>More details coming soon...</h2><br>
-    
-  </div>
-
   
 <div class="row">
       <div class="leftcolumn">
         
       <div><img src="https://f4.bcbits.com/img/a0601743922_10.jpg" alt="Be Brave album cover"></div>
 
-    
-  </div>
+      </div>
 
-      <div class="rightcolumn">
+      <div class="rightcolumn song">
         
-        <ol><br><br>
-          <li id="songName">Brightside</li>
-          <li id="songName">Dear John</li>
-          <li id="songName">Be Brave</li>
-          <li id="songName">Nights Like That</li>
-          <li id="songName">Wooden Decks</li>
-          <li id="songName">Game Changer</li>
-          <li id="songName">Neon Lights</li>
-          <li id="songName">Some Sort of Grace</li>
-          <li id="songName">Grand Delusions</li>
-          <li id="songName">Where Did I Go</li>
-          <li id="songName">Zombie Song</li>
-          <li id="songName">Love of Folk</li>
-        </ol>
+        <ul id="myUL">
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Brightside</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Dear John</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Be Brave</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Nights Like These</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Wooden Decks</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Game Changer</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Neon Lights</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Some Sort of Grace</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Grand Delusions</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Where Did I Go</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Zombie Song</label></li>
+          <li id="songName"><input type="checkbox" id="tickedSong">
+          <label class="strikethrough">Love of Folk</label></li>
+        </ul>
       
         </div>
       </div>
+
+
+
+      <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Brightside</h2>
+    </div>
+    <div class="modal-body">
+      <p>Am I just a voice? Am I just a face?
+        Cause I'm not the woman you want in your space
+        Gratified you don't lie, or pretend that you care
+        Cause I'm just a woman who wasn't prepared
+        
+        For being alone, or how long that would last
+        And when I met you I thought that that time had past
+        
+        You're just another knot in a long string of heartache
+        I got my hopes up and you carried me down
+        Think I'll stay down here at least for a moment
+        And look on the brightside when I stand up there's nobody keeping me tied.
+        
+        Perhaps it's bravado that lets me breath in
+        After a punch in the gut, your fist in my skin
+        Your words like a hymn, that I sing to myself
+        They tear through my skin, it's how I pay for my sins.
+        
+        I've heard it before and I'll hear it again
+        You think that I'm rad but you'd rather hear me sing.
+        
+        You're just another knot in a long string of heartache
+        I got my hopes up and you carried me down
+        Think I'll stay down here at least for a moment
+        And look on the brightside when I stand up there's nobody keeping me tied.</p>
+      <p>and artist song notes</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Close and move to next song</h3>
+    </div>
+  </div>
+
+</div>
    
