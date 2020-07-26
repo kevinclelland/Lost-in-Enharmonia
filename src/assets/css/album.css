@@ -20,17 +20,10 @@ body {
     color: white;
   }
 
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+  @media screen and (max-width: 600px) {
+    .column {
       width: 100%;
-      padding: 0;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
+      text-align: center;
     }
   }
 
@@ -168,7 +161,7 @@ body {
       }
 
       img {
-        width: 60%;
+        width: 70%;
         height: auto;
       }
 
@@ -176,20 +169,15 @@ body {
         width: 60%;
         height: auto;
      }
-
      
-      .leftcolumn {   
-        float: left;
-        width: 50%;
-      }
-      
-      .rightcolumn {
-        float: left;
-        width: 30%;
-        background-color: black;
-        padding-left: 20px;
-        text-align: justify;
-      }
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  text-align: center;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
 
   
   /* Clear floats after the columns */
@@ -213,7 +201,7 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /* Modal Content */
@@ -258,15 +246,18 @@ body {
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 2px 16x;
   background-color: #00aab6;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  
+  padding: 2px 16px;
+}
 
 .modal-footer {
-  padding: 2px 16px;
+  padding: 2px 10px;
   background-color: #00aab6;
   color: white;
 }
@@ -279,15 +270,13 @@ body {
 }
 /* Style the list items */
 #songName {
-  cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 10px 8px 10px 20px;
   list-style-type: none;
   background: rgb(182, 182, 182);
   font-size: 1em;
   transition: 0.2s;
-  
-  
+    
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -302,13 +291,13 @@ body {
 #songName:hover {
   background: rgb(87, 119, 80);
 }
-/* When clicked on, add a background color and strike out text */
+/* When clicked on, add a background color and strike out text 
 ul li.checked {
   background: #888;
   color: #255e16;
-  text-decoration: line-through;
+  text-decoration: line-through;*/
 }
-/* Add a "checked" mark when clicked on */
+/* Add a "checked" mark when clicked on 
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -319,9 +308,9 @@ ul li.checked::before {
   left: 16px;
   transform: rotate(45deg);
   height: 15px;
-  width: 7px;
+  width: 7px;*/
 }
-/* Style the close button */
+/* Style the close button 
 .close {
   position: absolute;
   right: 0;
@@ -331,15 +320,21 @@ ul li.checked::before {
 .close:hover {
   background-color: #06b900;
   color: white;
-}
+}*/
 
 #myUL {
   width: auto;
   border: 10px solid #828180;
   padding: 10px;
   margin: 10px;
+  text-align: left;
 }
 
 input[type=checkbox]:checked + label.strikethrough{
   text-decoration: line-through;
+  background: rgb(87, 119, 80);
+}
+
+#myBtn {
+  cursor: pointer;
 }
